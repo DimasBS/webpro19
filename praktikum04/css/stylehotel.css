@@ -1,0 +1,115 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	min-height: 100vh;
+	background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+h2{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: rgb(83, 14, 83);
+}
+
+li, a {
+	font-family: cursive;
+	font-weight: 500;
+	font-size: 16px;
+	color: rgb(83, 14, 83);
+	text-decoration: none;
+
+}
+header{
+	display: flex;
+	border-bottom: 1px solid whitesmoke;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+.logo{
+	cursor: pointer;
+}
+.nav_link{
+	list-style: none;
+}
+.nav_link li{
+	display: inline-block;
+	padding: 0px 20px;
+
+}
+.nav_link li a{
+	transition: all 0.3s ease 0s;
+
+}
+.nav_link li a:hover{
+	color: turquoise;
+}
+article{
+	display: flex;
+	margin-top: 10px;
+	padding-bottom: 20px;
+	justify-content: center;
+	border-bottom: 1px solid whitesmoke;
+}
+.wrapper{
+	margin: 5px;
+	width: 220px;
+	background: #fff;
+	padding: 30px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.wrapper .input-data{
+	height: 20px;
+	width: 100%;
+	position: relative;
+}
+.wrapper .input-data input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 17px;
+	border-bottom: 2px solid silver;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #4158d0;
+}
+.wrapper .input-data label{
+	
+	bottom: 10px;
+	left: 0;
+	color: grey;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+.tombol{
+	margin: 5px;
+	width: 220px;
+	background: transparent;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	border: none;
+}
+.tombol .botton{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: none;
+}
+.tombol .botton input{
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-size: 17px;
+	background-color: rgba(0, 163, 169, 1);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+.tombol .botton input:hover{
+	background-color: teal;
+	border: none;
+}
